@@ -1,0 +1,6 @@
+.env
+/nbproject/private/
+.idea
+/.idea
+.sql
+/vendor
