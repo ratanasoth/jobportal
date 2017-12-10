@@ -20,10 +20,10 @@ class PermissionController extends Controller
     // index
     public function index($id)
     {
-        if(!Right::check('Permission', 'l'))
-        {
-            return view('permissions.no');
-        }
+        // if(!Right::check('Permission', 'l'))
+        // {
+        //     return view('permissions.no');
+        // }
         $this->data['role'] = DB::table('roles')->where('id', $id)->first();
         $this->data['permissions'] = DB::table('permissions')->orderBy('permissions.id', 'ASC')->get();
         $this->data['roles'] = DB::table('roles')->get();

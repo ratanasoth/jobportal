@@ -19,10 +19,10 @@ class RoleController extends Controller
     // index
     public function index()
     {
-        if(!Right::check('Role', 'l'))
-        {
-            return view('permissions.no');
-        }
+        // if(!Right::check('Role', 'l'))
+        // {
+        //     return view('permissions.no');
+        // }
         $data['roles'] = DB::table('roles')->get();
         return view('roles.index', $data);
     }
@@ -36,10 +36,7 @@ class RoleController extends Controller
     }
     public function save(Request $r)
     {
-        if (Auth::user()==null)
-        {
-            return redirect('/login');
-        }
+       
         $data = array(
             'name' => $r->name
         );
