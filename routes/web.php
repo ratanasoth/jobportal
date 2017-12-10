@@ -258,5 +258,13 @@ Route::get("/mail/get/{id}", "MailController@get_email");
 Route::get("/mail/delete/{id}", "MailController@delete");
 // front pages
 Route::get('/page/{id}', "FrontPageController@index");
+// success candiate
+Route::get('/success-candidate', "SuccessCandidateController@index");
+Route::get('/success-candidate/create', "SuccessCandidateController@create");
+Route::post('/success-candidate/save', "SuccessCandidateController@save");
+Route::get('/success-candidate/edit/{id}', "SuccessCandidateController@edit");
+Route::get("/success-candidate/delete/{id}", "SuccessCandidateController@delete");
+Route::post('/success-candidate/update', "SuccessCandidateController@update");
+
 // test
 Route::get('/language/{id}', "LangController@index");

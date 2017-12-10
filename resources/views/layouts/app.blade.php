@@ -112,6 +112,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{url('/success-candidate')}}">
+                            <i class="fa fa-trophy text-warning"></i> Success Candidate
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{url('/com')}}">
                             <i class="fa fa-building text-success"></i>Company
                         </a>
